@@ -33,7 +33,10 @@ matchName()
      ReferenceError: matchName is not defined
 */
 const matchName = (drivers, name) => {
-  
+  let matchedDrivers = drivers.filter(driver => {
+    return driver.name === name
+  })
+  return matchedDrivers
 }
 
 
